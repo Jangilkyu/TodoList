@@ -1,4 +1,9 @@
 PODS:
+  - Realm (10.22.0):
+    - Realm/Headers (= 10.22.0)
+  - Realm/Headers (10.22.0)
+  - RealmSwift (10.22.0):
+    - Realm (= 10.22.0)
   - Reusable (4.1.2):
     - Reusable/Storyboard (= 4.1.2)
     - Reusable/View (= 4.1.2)
@@ -6,15 +11,20 @@ PODS:
   - Reusable/View (4.1.2)
 
 DEPENDENCIES:
+  - RealmSwift (~> 10)
   - Reusable
 
 SPEC REPOS:
   trunk:
+    - Realm
+    - RealmSwift
     - Reusable
 
 SPEC CHECKSUMS:
+  Realm: d9e4e5877095a6722145811f56fe89a531c9659d
+  RealmSwift: e4191b4b957fcfcbed23751ec65eec98f8173ab5
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
 
-PODFILE CHECKSUM: ae74c55027d558efa19a553003bd4fb501d48785
+PODFILE CHECKSUM: 39d76ab202acc462f4b37af51b71f4c8db02c095
 
 COCOAPODS: 1.11.2
