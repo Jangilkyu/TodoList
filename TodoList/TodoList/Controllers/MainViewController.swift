@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
    lazy var leftEditButton: UIBarButtonItem = {
         let leftEditButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(buttonPressed(_:)))
         leftEditButton.tag = 2
-       self.tableView.setEditing(true, animated: true)
+       self.tableView.setEditing(false, animated: true)
         return leftEditButton
     }()
     
@@ -78,7 +78,6 @@ class MainViewController: UIViewController {
                 
                 case 2:
                 print("2")
-
                 default:
                 print("default")
             }

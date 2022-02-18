@@ -16,6 +16,8 @@
 		D70CEEA027BBCA6F00BD7ECD /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70CEE9F27BBCA6F00BD7ECD /* MainNavigationController.swift */; };
 		D70CEEA227BBCAA200BD7ECD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70CEEA127BBCAA200BD7ECD /* MainViewController.swift */; };
 		D70CEEA427BBDC7F00BD7ECD /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70CEEA327BBDC7F00BD7ECD /* TodoListCell.swift */; };
+		D7B940DC27BE671700F013C3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B940DB27BE671700F013C3 /* RealmManager.swift */; };
+		D7B940DE27BE68A400F013C3 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B940DD27BE68A400F013C3 /* TodoEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D70CEE9F27BBCA6F00BD7ECD /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		D70CEEA127BBCAA200BD7ECD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D70CEEA327BBDC7F00BD7ECD /* TodoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
+		D7B940DB27BE671700F013C3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		D7B940DD27BE68A400F013C3 /* TodoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoEntity.swift; path = TodoList/Manager/TodoEntity.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		D70CEE8727BBC9BB00BD7ECD /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				D7B940DA27BE670400F013C3 /* Manager */,
 				D70CEE9E27BBCA5E00BD7ECD /* Model */,
 				D70CEE9D27BBCA5800BD7ECD /* View */,
 				D70CEE9C27BBCA5200BD7ECD /* Controllers */,
@@ -117,8 +122,17 @@
 		D70CEE9E27BBCA5E00BD7ECD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D7B940DD27BE68A400F013C3 /* TodoEntity.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D7B940DA27BE670400F013C3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D7B940DB27BE671700F013C3 /* RealmManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +252,10 @@
 				D70CEE8D27BBC9BB00BD7ECD /* ViewController.swift in Sources */,
 				D70CEEA427BBDC7F00BD7ECD /* TodoListCell.swift in Sources */,
 				D70CEE8927BBC9BB00BD7ECD /* AppDelegate.swift in Sources */,
+				D7B940DE27BE68A400F013C3 /* TodoEntity.swift in Sources */,
 				D70CEEA027BBCA6F00BD7ECD /* MainNavigationController.swift in Sources */,
 				D70CEE8B27BBC9BB00BD7ECD /* SceneDelegate.swift in Sources */,
+				D7B940DC27BE671700F013C3 /* RealmManager.swift in Sources */,
 				D70CEEA227BBCAA200BD7ECD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
